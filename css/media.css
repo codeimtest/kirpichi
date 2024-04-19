@@ -1,0 +1,277 @@
+/* === DESKTOP FIRST === */
+
+@media (max-width : 1600px) {
+	input[type="search"]{
+		min-width: 220px;
+	}
+	.contact_widget{
+		margin-right: 30px;
+	}
+}
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+	a.logo{
+		margin-right: 24px;
+	}
+	a.logo img{
+		max-width: 154px;
+	}
+	.header_shop_widget a + *{
+		margin-left: 12px;
+	}
+	.contact_widget{
+		margin-right: 20px;
+	}
+	.contact_widget a{
+		font-size: 14px;
+	}
+	.contact_widget div{
+		font-size: 10px;
+	}
+	.first_screen_slider .slide_wrapper{
+		padding: 0 108px 100px;
+	}
+	.social ul li a{
+		width: 62px;
+		height: 62px;
+	}
+	.social ul li a img{
+		max-width: 30px;
+	}
+	.payment > div:first-child{
+		font-size: 12px;
+	}
+	.copyright{
+		font-size: 12px;
+	}
+	.toggle_menu nav ul.sub_toggle{
+		padding-left: 20px;
+	}
+	.action_toggle{
+		min-width: 100%;
+	}
+	.action_toggle_desc div{
+		font-size: 24px;
+	}
+	.action_toggle_desc p{
+		font-size: 18px;
+	}
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+	.toggle_menu{
+		position: fixed;
+		overflow: auto;
+		height: 100%;
+		padding-bottom: 200px;
+	}
+.header_widget{
+	width: 100%;
+}
+.container-fluid{
+	--bs-gutter-x: .625rem;
+}
+.main_header {
+	padding: 20px 0;
+}
+header{
+	position: fixed;
+}
+main{
+	padding-top: 146px;
+}
+aside {
+	background: #fff;
+	position: fixed;
+	z-index: 38;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: var(--transition);
+	padding-top: 150px;
+	padding-bottom: 30px;
+}
+aside.active {
+	opacity: 1;
+	visibility: visible;
+	overflow: scroll;
+}
+aside ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+aside ul li{
+	width: 100%;
+}
+aside ul li a{
+	color: var(--light-text);
+	font-size: 18px;
+}
+ aside ul li + *{
+	margin-top: 14px;
+}
+.btn{
+	font-size: 16px;
+	padding: 12px 18px;
+}
+.contact_widget div{
+	font-size: 14px;
+}
+.contact_widget a{
+	font-size: 22px;
+}
+.back_btn i,.back_toggle_btn i{
+	margin-right: 10px;
+}
+.toggle_menu nav ul.sub_toggle{
+	padding-left: 10px;
+}
+input[type="search"]{
+	min-width: auto;
+	width: 199%;
+	margin-left: 0 !important;
+}
+.main_header{
+	position: relative;
+	z-index: 999;
+}
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+	.overlay{
+		display: none;
+	}
+	.toggle_menu nav ul{
+		max-width: 100%;
+		position: relative;
+	}
+	.toggle_menu nav ul.sub_toggle{
+		min-width: 100%;
+		position: fixed;
+		background: #fff;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		padding-top: 100px;
+		transition: var(--transition);
+	}
+	.top_contacts > * + *{
+		margin-left: 0;
+		margin-top: 14px;
+	}
+	.top_contacts{
+		border-bottom: 0;
+	}
+
+	aside{
+		padding-top: 92px;
+	}
+	.main_header {
+    padding: 8px 0;
+}
+main {
+	padding-top: 84px;
+}
+.first_screen_slider .slide_wrapper{
+	padding: 0 50px 100px;
+}
+.next_btn {
+	right: 14px;
+}
+.prev_btn{
+	left: 14px;
+}
+.prev_btn, .next_btn{
+	width: 42px;
+	height: 42px;
+	top: auto;
+	z-index: 33;
+	bottom: 6px;
+}
+.first_screen .first_screen_slider .swiper-pagination{
+	bottom: 18px;
+}
+.first_screen_action{
+	margin-top: 30px;
+	max-height: 260px;
+}
+.categories_grid_item_wrap > div{
+	font-size: 28px;
+}
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+	.first_screen_slider .slide_wrapper{
+		padding: 0 20px 100px;
+	}
+	.action_toggle_desc{
+		padding: 20px;
+	}
+	a.logo img {
+		max-width: 124px;
+}
+.first_screen_slider .slide_wrapper h2{
+	font-size: 28px;
+}
+.categories_grid_item_wrap > div{
+	font-size: 18px;
+}
+.toggle_catalog{
+	width: 100%;
+}
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+	input[type="search"]{
+		margin-left: 22px;
+	}
+
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}
