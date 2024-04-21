@@ -62,3 +62,42 @@ var swiper = new Swiper(".first_screen_slider", {
 		prevEl: ".prev_btn",
 	},
 });
+
+// var swiper = new Swiper(".thumb_gallery", {
+// 	loop: true,
+// 	spaceBetween: 10,
+// 	slidesPerView: 4,
+// 	freeMode: true,
+// 	watchSlidesVisibility: true,
+// 	watchSlidesProgress: true,
+// });
+// var swiper2 = new Swiper(".product_gallery", {
+// 	loop: true,
+// 	spaceBetween: 10,
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// 	thumbs: {
+// 		swiper: swiper,
+// 	},
+// });
+// filters
+$('.filter_catalog').click(function(){
+	$(this).next().slideToggle(300)
+})
+$('.choice_color button:first').addClass('active');
+var initialColor = $('.choice_color button.active').css('background-color');
+$('.choice_color_output').css('background-color', initialColor);
+$('.choice_color button').click(function(){
+	
+	$('.choice_color button').removeClass('active')
+	$(this).addClass('active')
+	var inColor = $(this).css('background-color'); // Получаем цвет фона кнопки
+	console.log(inColor); // Выводим цвет в консоль
+	var outColor = $('.choice_color_output');
+	$(outColor).css('background-color',inColor)
+})
+$('.js-select-single').select2({
+	minimumResultsForSearch: -1,
+});
