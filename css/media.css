@@ -56,6 +56,15 @@
 	.action_toggle_desc p{
 		font-size: 18px;
 	}
+	.catalog_item img{
+		min-height: 200px;
+	}
+	.catalog_item_desc{
+		padding: 16px;
+	}
+	.catalog_item_desc > div{
+		font-size: 18px;
+	}
 }
 
 /* lg <= Extra large (xl) */
@@ -140,10 +149,20 @@ input[type="search"]{
 	position: relative;
 	z-index: 999;
 }
+.page_content h2,.page_content .two{
+	font-size: 28px;
+}
+.breadcrumbs a{
+	font-size: 14px;
+}
 }
 
 /* md <= Large (lg) */
 @media (max-width : 992px) {
+
+	.sidebar{
+		display: none;
+	}
 	.overlay{
 		display: none;
 	}
@@ -206,6 +225,31 @@ main {
 .categories_grid_item_wrap > div{
 	font-size: 28px;
 }
+.sticky{position: relative;}
+.product_gallery img{
+	min-height: 225px;
+}
+.meta_btns a + *{
+	margin-left: 0;
+	margin-top: 20px;
+}
+.product_select{
+	flex-flow: column;
+	align-items: flex-start;
+}
+.product_select label{
+	margin-bottom: 14px;
+	max-width: 100%;
+}
+.divider{
+	margin: 30px 0;
+}
+.product_more_items > div{
+	margin-left: 0;
+}
+.product_more_items > div + *{
+	margin-top: 10px;
+}
 }
 
 /* sm <= Medium (md) */
@@ -215,6 +259,16 @@ main {
 
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
+	.choice_color{
+		max-width: 100px;
+		padding: 8px;
+	}
+	.choice_color > div{
+		font-size: 14px;
+	}
+	.choice_color button + *{
+		margin-top: 6px;
+	}
 	.first_screen_slider .slide_wrapper{
 		padding: 0 20px 100px;
 	}
@@ -231,6 +285,12 @@ main {
 	font-size: 18px;
 }
 .toggle_catalog{
+	width: 100%;
+}
+.catalog_item_desc a{
+	width: 100%;
+}
+.btn{
 	width: 100%;
 }
 }
@@ -255,11 +315,20 @@ main {
 
 /* Large (lg) */
 @media (min-width : 992px) {
+	.select2-container{
+		max-width: 220px;
+	}
+
 	input[type="search"]{
 		margin-left: 22px;
 	}
-
-
+	.sidebar{
+		display: block !important;
+	}
+	.product_brand{
+		margin-left: 116px;
+		display: block;
+	}
 }
 
 /* Extra large (xl) */
@@ -267,11 +336,16 @@ main {
 	.text {
 		font-size: 18px;
 	}
+
 }
 
 /* Extra extra large (xxl) */
 @media (min-width : 1400px) {
 	.text {
 		font-size: 22px;
+	}
+	.product_brand{
+		margin-left: 216px;
+		display: block;
 	}
 }
